@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contato - Fale conosco</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Nova
+  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script language="javascript" type="text/javascript">
+    function validar(event) {
+      // Prevenir o envio do formulário padrão
+      if (event) {
+        event.preventDefault();
+      }
+  
+      // Acessar o formulário
+      var form = document.forms['form1'];
+      if (!form) {
+        alert("O formulário não foi encontrado. Verifique o nome ou a estrutura do HTML.");
+        return false;
+      }
+  
+      // Capturar os valores dos campos
+      var vnome = form["nome"].value.trim();
+      var vemail = form["email"].value.trim();
+      var vnota = form["nota"].value.trim();
+  
+      // Validar campos
+      if (vnome === "") {
+        alert("Preencha o campo vazio com seu nome");
+        form["nome"].focus();
+        return false;
+      }
+  
+      if (vemail === "") {
+        alert("Preencha o campo vazio com seu email");
+        form["email"].focus();
+        return false;
+      }
+  
+      if (vnota === "") {
+        alert("Selecione uma nota para o site");
+        form["nota"].focus();
+        return false;
+      }
+  
+      // Mensagem de sucesso e resetar formulário
+      alert("Dados enviados com sucesso!");
+      form.reset();
+      return true;
+    }
+  </script>
+  
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">FERMAN</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portifólio</a></li>
+          <!--
+          <li><a href="team.html">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="contact.html" class="active">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade"
+      style="background-image: url(img/contact-page-title-bg.jpg);">
+      <div class="container">
+        <h1>Contato</h1>
+        <nav class="breadcrumbs">
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5-5">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefone</h3>
+                <p>+55 19 98458-3476</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email </h3>
+                <p>if.arcondferman@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-7 ">
+            <form name="form1" method="get">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="nome" class="form-control " placeholder="Seu nome" style="height: 40px;">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control " placeholder="Seu Email" style="height: 40px;">
+                </div>
+                <div class="col-12">
+                  <select class="form-control " style="height: 40px;" name="nota">
+                    <option value="">Nota para o site</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control " rows="4" placeholder="Mensagem"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button class="btn btn-primary" type="button" onclick="validar(event)">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">FERMAN</span>
+            </a>
+            <p>Realização de manutenções em aparelhos de refrigeração e manutenção em ares-condicionados. </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-snow"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Páginas</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="services.html">Serviços</a></li>
+              <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contato</h4>
+            <p class="mt-4"><strong>Telefone:</strong> <span>+55 19 98458-3476</span></p>
+            <p><strong>Email:</strong> <span>if.arcondferman@gmail.com</span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center">
+      <p>Thamires -2024 <span>&copy;</span> <span>Todos os direitos reservados</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Trabalho acadêmico sem fins lucrativos
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
